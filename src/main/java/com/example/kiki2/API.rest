@@ -1,0 +1,18 @@
+### Variables
+@SERVER = http://localhost:8080
+
+### Test Server
+GET {{SERVER}}
+
+### Get all cars
+GET {{SERVER}}/api/cars
+
+### Add new car
+POST {{SERVER}}/api/cars
+Content-Type: application/json
+
+{
+  "model": "LimoZine",
+  "make": "Benz",
+  "colour": "Red"
+}
